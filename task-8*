@@ -1,0 +1,9 @@
+max=0
+for i in range(len(number) - 12):#13 чисел
+    s=number[i:i+13]
+    p=1
+    for digit in s:
+        p *= int(digit)
+    if p > max:
+        max=p
+print(max)
