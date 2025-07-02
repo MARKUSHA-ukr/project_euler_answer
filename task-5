@@ -1,0 +1,8 @@
+def fun():
+    for i in range(1,100000000000):
+        for n in range(1,21):
+            if i % n !=0:
+                break
+        else:
+            return i
+print(fun())
