@@ -1,0 +1,4 @@
+suma=sum(range(1,101))
+squ=sum(i**2 for i in range(1,101) )
+result=suma**2-squ
+print(result)
