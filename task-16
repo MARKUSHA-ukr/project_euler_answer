@@ -1,0 +1,4 @@
+a = 2**1000
+s=str(a)
+b = list(map(int,s))
+print(sum(b))
