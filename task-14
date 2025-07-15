@@ -12,4 +12,4 @@ for start in range(2,999_999):
     if count>max:
         max=count
         num = start
-print(max,' times and number:',num)
+print(max,'-times and number:',num)
