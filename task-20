@@ -1,0 +1,9 @@
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return x * factorial(x-1)
+
+a = factorial(100)
+s = sum(int(i) for i in str(a))
+print(s)
