@@ -1,0 +1,26 @@
+def find_num(n):
+    total=0
+    for i in range(1,n):
+        if n%i == 0:
+            total += i
+    return total>n 
+    
+list = []
+
+for i in range(1,28123):
+    if find_num(i):
+        list.append(i)
+
+in_list_all = [False] * 28124 
+
+for i in list:
+    for j in list:
+        cyma = i+j
+        if cyma <=28123:
+            in_list_all[cyma]=True 
+total = 0
+for num in range(1,28124):
+    if not in_list_all[num]:
+        total += num
+
+print(total)
