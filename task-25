@@ -1,0 +1,12 @@
+def fibonachi(n):
+    a , b = 0,1
+    for _ in range(n):
+        a,b = b,a+b
+    return a
+
+for n in range (1,100000):
+    a = fibonachi(n)
+    d = len(str(a))
+    if d == 1000:
+        print(n)
+        break
