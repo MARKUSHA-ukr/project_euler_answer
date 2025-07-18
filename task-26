@@ -1,0 +1,15 @@
+max_length = 0
+result = 0
+for i in range(2, 999):
+    k = 1
+    while k < i:  
+        if pow(10, k, i) == 1: 
+            break
+        else:
+            k += 1
+    else:
+        continue
+    if k > max_length:
+        max_length = k
+        result = i
+print(result)
